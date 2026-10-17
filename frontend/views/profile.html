@@ -1,0 +1,86 @@
+<div class="container-fluid">
+  <div class="mb-4">
+    <h1 class="h3 mb-1 text-gray-800">Profile &amp; settings</h1>
+    <p class="mb-0 text-muted">Keep your account and fitness preferences up to date.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 mb-4">
+      <div class="card shadow h-100">
+        <div class="card-body text-center">
+          <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center p-4 mb-3">
+            <i class="fas fa-user fa-2x"></i>
+          </div>
+          <h5 class="font-weight-bold text-gray-800">Alex Morgan</h5>
+          <p class="text-muted small mb-4">Fitness enthusiast</p>
+          <div class="row text-center">
+            <div class="col"><div class="h5 mb-0 font-weight-bold">12</div><small class="text-muted">Workouts</small></div>
+            <div class="col"><div class="h5 mb-0 font-weight-bold">3</div><small class="text-muted">Plans</small></div>
+            <div class="col"><div class="h5 mb-0 font-weight-bold">28</div><small class="text-muted">Days active</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 mb-4">
+      <div class="card shadow">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Personal information</h6>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="profileName" class="form-label">Full name</label>
+                <input type="text" class="form-control" id="profileName" value="Alex Morgan">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="profileEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="profileEmail" value="alex@example.com">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="profilePassword" class="form-label">New password</label>
+              <input type="password" class="form-control" id="profilePassword" placeholder="Leave blank to keep current password">
+            </div>
+
+            <h6 class="font-weight-bold text-gray-800 border-bottom pb-2 mb-3">Fitness profile</h6>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="fitnessGoal" class="form-label">Primary goal</label>
+                <select class="form-select" id="fitnessGoal">
+                  <option>Build strength</option>
+                  <option>Improve endurance</option>
+                  <option>Lose weight</option>
+                  <option>Maintain fitness</option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="activityLevel" class="form-label">Activity level</label>
+                <select class="form-select" id="activityLevel">
+                  <option>Moderately active</option>
+                  <option>Lightly active</option>
+                  <option>Very active</option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="profileHeight" class="form-label">Height (cm)</label>
+                <input type="number" class="form-control" id="profileHeight" value="178">
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="profileWeight" class="form-label">Weight (kg)</label>
+                <input type="number" class="form-control" id="profileWeight" value="76">
+              </div>
+              <div class="col-md-4 mb-4">
+                <label for="profileAge" class="form-label">Age</label>
+                <input type="number" class="form-control" id="profileAge" value="28">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
