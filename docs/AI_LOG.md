@@ -37,3 +37,10 @@
 - **What was wrong:** The AI placed all view sections on the same page without hiding inactive sections, so the dashboard displayed content from every view.
 - **How it was noticed:** The site was run and the dashboard displayed all view information.
 - **How it was fixed:** Added `display: none` for SPApp sections in `spapp.css`, with only the selected section displayed.
+
+- **Tool:** Github Copilot
+- **Model:** Fronted
+- **Task:** Migrate old legacy Bootstrap 4 classes and items from the template to Bootstrap 5.
+- **Main prompt:** "Keep Bootstrap 5 CSS and JavaScript. Replace or remove the Bootstrap 4-based SB Admin 2 stylesheet. Replace Bootstrap 4-only classes. Replace Bootstrap 4 JavaScript attributes."
+- **What was generated:** Converted Bootstrap 4 classes to Bootstrap 5 classes and deleted old legacy items where needed.
+- **What the student kept, changed, or rejected:** Kept the changes.
