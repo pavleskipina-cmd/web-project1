@@ -1,0 +1,7 @@
+#spapp > section {
+  display: none;
+}
+
+#spapp > section:target {
+  display: block;
+}

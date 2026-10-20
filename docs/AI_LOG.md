@@ -25,3 +25,15 @@
 - **What was wrong:** Some CSS and asset links were broken because the files were in different directories.
 - **How it was noticed:** The pages were checked manually and reviewed after each prompt.
 - **How it was fixed:** The reviewer provided detailed bullet-point feedback, which was given to the Frontend agent to correct the links.
+
+- **Tool:** Github Copilot
+- **Model:** Frontend
+- **Task:** Make a SPA using SPApp.
+- **Main prompt:** "Refactor our frontend single-page application (SPA) routing to use SPApp (jquery.spapp). Create routes for #dashboard, #workouts, #exercises, #nutrition, #reviews, and #profile, register login, register, forgot-password, and admin as standalone routes, remove old custom routing scripts, and keep only the main user/dashboard views in the sidebar."
+- **What was generated:** SPApp-based frontend routing, route sections for the requested views, sidebar navigation updates, and removal of the old routing scripts.
+- **What the student kept, changed, or rejected:** Kept the changes.
+
+### Where the AI was wrong
+- **What was wrong:** The AI placed all view sections on the same page without hiding inactive sections, so the dashboard displayed content from every view.
+- **How it was noticed:** The site was run and the dashboard displayed all view information.
+- **How it was fixed:** Added `display: none` for SPApp sections in `spapp.css`, with only the selected section displayed.

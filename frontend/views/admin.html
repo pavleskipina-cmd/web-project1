@@ -1,0 +1,122 @@
+<div class="container-fluid">
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div>
+      <h1 class="h3 mb-1 text-gray-800">Admin Management Console</h1>
+      <p class="mb-0 text-muted">Manage registered users and monitor FitPulse activity.</p>
+    </div>
+    <span class="badge bg-danger-subtle text-danger-emphasis px-3 py-2">
+      <i class="fas fa-lock me-1"></i>Administrator access
+    </span>
+  </div>
+
+  <div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+      <h6 class="m-0 font-weight-bold text-primary">User management</h6>
+      <span class="badge bg-light text-primary">Sample data</span>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Username</th>
+              <th scope="col">Email</th>
+              <th scope="col">Role</th>
+              <th scope="col" class="text-end">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="fw-bold">admin</td>
+              <td>admin@fitpulse.local</td>
+              <td><span class="badge bg-danger">admin</span></td>
+              <td class="text-end text-nowrap">
+                <button type="button" class="btn btn-sm btn-outline-primary me-1">Change Role</button>
+                <button type="button" class="btn btn-sm btn-outline-danger">Delete User</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="fw-bold">maria.fit</td>
+              <td>maria@example.com</td>
+              <td><span class="badge bg-primary">user</span></td>
+              <td class="text-end text-nowrap">
+                <button type="button" class="btn btn-sm btn-outline-primary me-1">Change Role</button>
+                <button type="button" class="btn btn-sm btn-outline-danger">Delete User</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="fw-bold">nikola.training</td>
+              <td>nikola@example.com</td>
+              <td><span class="badge bg-primary">user</span></td>
+              <td class="text-end text-nowrap">
+                <button type="button" class="btn btn-sm btn-outline-primary me-1">Change Role</button>
+                <button type="button" class="btn btn-sm btn-outline-danger">Delete User</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="fw-bold">ana.wellness</td>
+              <td>ana@example.com</td>
+              <td><span class="badge bg-primary">user</span></td>
+              <td class="text-end text-nowrap">
+                <button type="button" class="btn btn-sm btn-outline-primary me-1">Change Role</button>
+                <button type="button" class="btn btn-sm btn-outline-danger">Delete User</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+      <h6 class="m-0 font-weight-bold text-primary">System activity</h6>
+      <span class="badge bg-success">Operational</span>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+              <th scope="col">Actor</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:42</td>
+              <td>New user registration completed</td>
+              <td>maria.fit</td>
+              <td><span class="badge bg-success">Success</span></td>
+            </tr>
+            <tr>
+              <td>09:18</td>
+              <td>Workout template updated</td>
+              <td>admin</td>
+              <td><span class="badge bg-success">Success</span></td>
+            </tr>
+            <tr>
+              <td>08:55</td>
+              <td>Nutrition log synchronization</td>
+              <td>System</td>
+              <td><span class="badge bg-info">In progress</span></td>
+            </tr>
+            <tr>
+              <td>08:30</td>
+              <td>Daily database backup</td>
+              <td>System</td>
+              <td><span class="badge bg-success">Success</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
