@@ -6,6 +6,6 @@
  */
 header('Content-Type: application/json');
 echo json_encode([
-    'app' => 'CampusEvents API',
+    'app' => 'FitPulse API',
     'message' => 'The backend is running.'
 ]);
