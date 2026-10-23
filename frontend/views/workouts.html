@@ -1,0 +1,69 @@
+<div class="container-fluid">
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div>
+      <h1 class="h3 mb-1 text-gray-800">Workouts</h1>
+      <p class="mb-0 text-muted">Manage your training routines and progress.</p>
+    </div>
+    <button type="button" class="btn btn-primary shadow-sm">
+      <i class="fas fa-plus fa-sm text-white-50 me-2"></i>Add workout
+    </button>
+  </div>
+
+  <div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex align-items-center justify-content-between">
+      <h6 class="m-0 font-weight-bold text-primary">Workout routines</h6>
+      <span class="badge bg-light text-primary">Sample data</span>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Routine</th>
+              <th>Focus</th>
+              <th>Duration</th>
+              <th>Difficulty</th>
+              <th>Status</th>
+              <th class="text-end">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-bold">Upper Body Strength</td>
+              <td>Chest, back, shoulders</td>
+              <td>45 min</td>
+              <td><span class="badge bg-warning-subtle text-warning-emphasis">Intermediate</span></td>
+              <td><span class="badge bg-success">Active</span></td>
+              <td class="text-end text-nowrap">
+                <button type="button" class="btn btn-sm btn-outline-primary me-1">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-bold">Leg Day Essentials</td>
+              <td>Quads, hamstrings, glutes</td>
+              <td>50 min</td>
+              <td><span class="badge bg-danger-subtle text-danger-emphasis">Advanced</span></td>
+              <td><span class="badge bg-success">Active</span></td>
+              <td class="text-end text-nowrap">
+                <button type="button" class="btn btn-sm btn-outline-primary me-1">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-bold">Morning Mobility</td>
+              <td>Full body movement</td>
+              <td>20 min</td>
+              <td><span class="badge bg-info-subtle text-info-emphasis">Beginner</span></td>
+              <td><span class="badge bg-secondary">Draft</span></td>
+              <td class="text-end text-nowrap">
+                <button type="button" class="btn btn-sm btn-outline-primary me-1">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
