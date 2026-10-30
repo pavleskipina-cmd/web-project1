@@ -44,3 +44,9 @@
 - **Main prompt:** "Keep Bootstrap 5 CSS and JavaScript. Replace or remove the Bootstrap 4-based SB Admin 2 stylesheet. Replace Bootstrap 4-only classes. Replace Bootstrap 4 JavaScript attributes."
 - **What was generated:** Converted Bootstrap 4 classes to Bootstrap 5 classes and deleted old legacy items where needed.
 - **What the student kept, changed, or rejected:** Kept the changes.
+
+- **Tool:** github vopilot
+- **Task:** ssdfsd
+- **Main prompt:** "fsdfs"
+- **What was generated:** fsdfsfd
+- **What the student kept, changed, or rejected:** fsdfsfd.
