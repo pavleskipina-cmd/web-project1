@@ -45,8 +45,9 @@
 - **What was generated:** Converted Bootstrap 4 classes to Bootstrap 5 classes and deleted old legacy items where needed.
 - **What the student kept, changed, or rejected:** Kept the changes.
 
-- **Tool:** github vopilot
-- **Task:** ssdfsd
-- **Main prompt:** "fsdfs"
-- **What was generated:** fsdfsfd
-- **What the student kept, changed, or rejected:** fsdfsfd.
+- **Tool:** Github copilot
+- **Model:** Reviewer
+- **Task:** Review if there are bugs or possible errors in the written DAO classes
+- **Main prompt:** "can you check the changes made to the DAO ,and if there are any errors or problems"
+- **What was generated:** The agent pointed out possible problems, such as using snake case in PHP classes which previously wasn't defined, data protection, and lack of data integrity checks.
+- **What the student kept, changed, or rejected:** Kept all of the proposed changes.
