@@ -27,7 +27,7 @@ Roles: [admin, user]. Entities: [users, workouts, exercises, nutrition_logs, rev
  
 ## Conventions
 - PHP classes: PascalCase (UserService, UserDao). Files are named after the class.
-- JavaScript and PHP variables: camelCase. Database tables and columns: snake_case.
+- JavaScript variables: camelCase. PHP variables, database tables, and columns: snake_case.
  
 ## Rules for AI assistants
 - Do not add new libraries or frameworks without asking me first.

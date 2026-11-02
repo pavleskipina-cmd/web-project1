@@ -44,3 +44,10 @@
 - **Main prompt:** "Keep Bootstrap 5 CSS and JavaScript. Replace or remove the Bootstrap 4-based SB Admin 2 stylesheet. Replace Bootstrap 4-only classes. Replace Bootstrap 4 JavaScript attributes."
 - **What was generated:** Converted Bootstrap 4 classes to Bootstrap 5 classes and deleted old legacy items where needed.
 - **What the student kept, changed, or rejected:** Kept the changes.
+
+- **Tool:** Github copilot
+- **Model:** Reviewer
+- **Task:** Review if there are bugs or possible errors in the written DAO classes
+- **Main prompt:** "can you check the changes made to the DAO ,and if there are any errors or problems"
+- **What was generated:** The agent pointed out possible problems, such as using snake case in PHP classes which previously wasn't defined, data protection, and lack of data integrity checks.
+- **What the student kept, changed, or rejected:** Kept all of the proposed changes.
