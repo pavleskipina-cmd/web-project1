@@ -12,8 +12,16 @@ Roles: [admin, user]. Entities: [users, workouts, exercises, nutrition_logs, rev
  
 ## Folder structure
 - frontend/: css/, js/, views/ (one HTML file per view), assets/, index.html          app shell, every <section> in <main id="spapp"> is one view
-- backend/: routes/, services/, dao/, middleware/, config/, logs/
+- backend/: 
+  - rest/routes/: thin FlightPHP route files
+  - rest/services/: service-layer validation and business rules
+  - rest/dao/: PDO database access
+  - utils/: exception classes and reusable validation helpers
+  - config/: local and example configuration
+  - logs/: runtime log files
+  - vendor/: Composer dependencies, ignored by Git
 - docs/: AI_LOG.md and other documentation
+- database/: local MySQL schema and seed data
  
 ## Frontend rules
 - Each view is in its own file in frontend/views/.
@@ -24,6 +32,16 @@ Roles: [admin, user]. Entities: [users, workouts, exercises, nutrition_logs, rev
 - Only services call DAO classes. Routes never call DAO classes directly.
 - All SQL uses PDO prepared statements.
 - Routes return JSON with correct HTTP status codes.
+- Route handlers may parse request/query data and call one service method, but must not contain SQL, try/catch blocks, or business rules.
+- External API integrations belong in a service. Use a strict timeout and throw `ExternalServiceException` for 503 failures.
+- `backend/config/config.php`, `backend/vendor/`, and runtime log files are not committed.
+
+## API conventions
+- Entity IDs use numeric FlightPHP path patterns such as `@id:[0-9]+`.
+- CRUD collections use `/users`, `/workouts`, `/exercises`, `/nutrition_logs`, and `/reviews`.
+- Creation returns HTTP `201`; deletion returns HTTP `200` with a confirmation message.
+- Validation errors return `400`, missing entities return `404`, unexpected errors return `500`, and external API failures return `503`.
+- OpenAPI JSON is served at `/openapi.json`; Swagger UI is served at `/docs`.
  
 ## Conventions
 - PHP classes: PascalCase (UserService, UserDao). Files are named after the class.
