@@ -17,6 +17,16 @@ class Config
     public static function DB_USER()     { return self::get_env('DB_USER', 'root'); }
     public static function DB_PASSWORD() { return self::get_env('DB_PASSWORD', ''); }
 
+    // Public TheMealDB base API URL. Optional API keys are read only from the environment.
+    public static function EXTERNAL_RECIPE_API_BASE_URL()
+    {
+        return self::get_env('EXTERNAL_RECIPE_API_BASE_URL', 'https://www.themealdb.com/api/json/v1/1');
+    }
+    public static function EXTERNAL_RECIPE_API_KEY()
+    {
+        return self::get_env('EXTERNAL_RECIPE_API_KEY', '');
+    }
+
     /**
      * Environment variables (set on the server) win over the default values above.
      */
